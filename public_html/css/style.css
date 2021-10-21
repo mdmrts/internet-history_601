@@ -1,4 +1,114 @@
-h1 {
-    color: red;
-    font-weight: bold;
+.headerContainer .primarylinks{
+    font-size: 25px;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headerContainer .pagetitle {
+    font-weight: bolder;
+    font-size: 50px;
+    align-items: center;
+}
+
+.headerContainer{
+    width: 100%;
+    min-height: 100%;
+    display: inline-flex;
+}
+
+.backgroundImage{
+    background-image: url('../images/z_background.jpg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-image {
+    background-image: url('../images/banner_image.jpg');
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: inline-flex;
+}
+
+.bannerText{
+    font-weight: bolder;
+    color: whitesmoke;
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: inline-flex;
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+    grid-gap: 10px;
+    grid-auto-columns: 100%;
+    grid-auto-rows: 100%;
+    border-top: 5px double black;
+    border-bottom: 5px double black;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    word-break: break-all;
+}
+
+.box {
+    border: 5px;
+    padding: 20px;
+}
+.wrapper .box .leftImageBox {
+    grid-column: 1 ;
+    width: 20%;
+}
+.wrapper .box .rightContentPane {
+    grid-column: 2;
+    width: 80%;
+}
+
+.wrapper .box .leftContent {
+    grid-column: 1 ;
+    width: 20%;
+}
+.wrapper .box .rightImageBox {
+    grid-column: 2;
+    width: 80%;
+}
+
+.wrapper .box .sideContentbar{
+    grid-column: 3;
+    border-left: 5px double black;
+    width: 30%;
+}
+
+.signUpForm{
+    float: right;
+    align-content: center;
+    background-color: antiquewhite;
+    display: inline-grid;
+    margin: 150px 150px 150px 0;
+    padding: 50px;
+
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    min-width: 250px;
+    padding: 15px;
+    margin: 10px 0 10px 0;
+
+}
+.footer{
+    position: relative;
+    bottom: 100%;
+    width: 100%;
+    align-content: end;
+    justify-content: space-around;
+    background-color: white
 }
