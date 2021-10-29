@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="description" content="This is an example of a meta description.
+    This will often show up in search results">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30% ;
+            grid-gap: 1px;
+            background-color: #fff;
+            color: #444;
+            margin-top: 75px;
+        }
+
+        .box {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+        }
+        /* The navigation bar */
+        .navbar {
+            overflow: visible;
+            background-color: #333;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+            height: 50px;
+        }
+
+        /* Links inside the navbar */
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change background on mouse-over */
+        .navbar a:hover {
+            background: #ddd;
+            color: black;
+        }
+        .navbar a:active {
+            background: #ddd;
+            color: white;
+        }
+        /* Main content */
+
+        .main {
+            margin-top: 30px; /* Add a top margin to avoid content overlay */
+        }
+
+        @media only screen and (max-width: 600px) {
+            .wrapper{
+                grid-template-columns: 100% ;
+            }
+            .d{
+                visibility: hidden;
+            }
+        }
+
+
+    </style>
+
+
+</head>
+
+
+<body>
+<<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a class="hidden" href="#about">About</a>
+
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+    </div>
+
+
+
+</body>
+</html>

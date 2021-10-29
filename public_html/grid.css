@@ -1,0 +1,267 @@
+:root {
+    --header-panel-height: 60px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    padding-top: var(--header-panel-height);
+    line-height: 1.7;
+}
+
+.main {
+    display: flex;
+}
+
+.h-60 {
+    height: var(--header-panel-height);
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.header-block {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.mt-45 {
+    margin-top: 45px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #303646;
+    font-size: 22px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #303646;
+}
+
+a:hover {
+    color: grey;
+}
+
+.color-white {
+    color: white;
+}
+
+.flex-direction-row {
+    flex-direction: row;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+.justify-text{
+    text-align: justify;
+
+}
+.header-panel {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: var(--header-panel-height);
+    background-color: white;
+}
+
+.logo {
+    margin-right: 15px;
+    width: 60px;
+}
+
+.list-style-none{
+    list-style: none;
+}
+
+.pr-40 {
+    padding-right: 80px;
+}
+
+.pr-20 {
+    padding-right: 20px;
+}
+
+.book-container {
+    background-image: url(hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height : 500px;
+
+
+}
+.bold{
+    font-weight: bold;
+}
+.white-bold-font {
+    color: white;
+    font-weight: bold;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+.book-img {
+    height: 200px;
+    width: 150px;
+}
+
+.headline {
+    margin-bottom: 8px;
+    letter-spacing: 1.1px;
+    font-size: 36px;
+}
+
+
+
+.w-1000 {
+    width: 1000px;
+}
+
+.w-300 {
+    width: 300px;
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.content-box-secondary {
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 40px;
+    width: 1000px;
+}
+
+
+.p-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.box-content {
+    width: 400px;
+    line-height: 1.7;
+}
+.h-220 {
+    height: 220px;
+}
+
+.mt-mb-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.legend-decor {
+    color: #67efd6;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pt-15 {
+    padding-top: 15px;
+}
+
+
+
+.h-25 {
+    height: 25px;
+}
+
+
+
+
+
+.pt-pb-55 {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.pr-80{
+    padding-right: 500px;
+}
+
+.fl-right
+{
+    float: right;
+    position: absolute;
+    right: 100px;
+
+}
+
+.image{
+    width: 300px;
+}
+
+.img-h{
+    width: 400px;
+    height: 400px;
+    right: 5px;
+}
+
+.img-h-l{
+    top: 200px;
+    width: 400px;
+    height: 300px;
+    right: 50px;
+}
+
+.fl-c{
+    margin: auto;
+    width: 50vh;
+    padding: 10px;
+
+}
