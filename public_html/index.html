@@ -2,20 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link type = "text/css" rel="stylesheet" href="css/style.css">
-    <title>Index Page</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
 
-<body>
-<h1 class="pagetitle" style="display: block">
-    Home Page
-    <h2 class="primarylinks" style="text-align: right">
-        <a href="f-layout.html">F-Layout</a>
-        <a href="z-layout.html">Z-Layout</a>
-    </h2>
-</h1>
-<h2>
-     Welcome to my index page..
-</h2>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body >
+<header class="main header-panel flex-direction-row align-items-center justify-content-space-between pr-20 pl-10">
+    <div class="align-items-center main">
+        <img src="images/internetlogo.jpeg" alt="logo" class="logo">
+        <span>HISTORY OF THE INTERNET</span>
+    </div>
+    <div class="list-style-none flex-direction-row main align-items-center">
+        <p class="pr-20"><a href="index.html">HOME</a></p>
+        <p class="pr-20"><a href="inventioninternet.html"> INVENTION OF THE INTERNET</a></p>
+        <p class="pr-20"><a href="Dotcombubble.html"> DOT COM BUBBLE</a></p>
+        <p class="pr-20"><a href="aboutinternet.html"> ABOUT THE INTERNET</a></p>
+
+    </div>
+</header>
+<main>
+    <div class="book-container main justify-content-center">
+    </div>
+    <div class="content-box">
+        <div class="justify-content-space-around main w-1000">
+            <section class="mr-20 w-300">
+                <h2 class="header-block">INVENTION OF THE INTERNET</h2>
+                <p class = "justify-text">
+                    Advanced Research Projects Agency (ARPA),  later renamed the Defense Advanced Research Projects Agency (DARPA) the agency was created on February 7, 1958 by President Dwight D. Eisenhower in response to the Soviet launching of Sputnik 1 in 1957.
+                </p>
+                <br> <p class="pr-20 bold"><a href="inventioninternet.html"> READ MORE</a></p>
+            </section>
+            <section class="mr-20 w-300">
+                <h2 class="header-block" id="link-for-advantages">DOT COM BUBBLE</h2>
+                <p class = "justify-text">
+                    The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The companies were largely those with a “.com” domain on their internet address.
+                </p><p class="pr-20 bold"><a href="Dotcombubble.html"> READ MORE</a></p>
+            </section>
+            <section class="w-300">
+                <h2 class="header-block">ABOUT THE INTERNET</h2>
+                <p class = "justify-text">
+                    An IP address is a unique address that identifies a device on the internet or a local network. IP stands for "Internet Protocol," which is the set of rules governing the format of data sent via the internet or local network.
+                </p>
+                <br><p class="pr-20 bold"><a href="aboutinternet.html"> READ MORE</a></p>
+            </section>
+        </div>
+    </div>
+
+
+
+</main>
+<footer >
+    <a href="http://validator.w3.org/" rel="nofollow" title="Validate as HTML5">W3C</a>
+
+    <p class="fl-c"><span>&copy;Merve</span></p>
+</footer>
 </body>
 </html>
