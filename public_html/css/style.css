@@ -133,7 +133,7 @@ a:hover {
 }
 
 .book-container {
-    background-image: url(hero.jpg);
+    background-image: url(hero1.jpg);
 
     background-size: cover;
     background-position: center;
@@ -167,7 +167,7 @@ a:hover {
 
 
 .w-1000 {
-    width: 1000px;
+    width: 1500px;
 }
 
 .w-300 {
@@ -181,8 +181,10 @@ a:hover {
 }
 .content-box-secondary {
     padding-bottom: 20px;
-    padding-left: 40px;
-    width: 1000px;
+    padding-left: 100px;
+    padding-right:40px ;
+    width: 1500px;
+
 }
 
 

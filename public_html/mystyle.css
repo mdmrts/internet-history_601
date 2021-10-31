@@ -2,9 +2,8 @@
     --header-panel-height: 60px;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
+p.justify-text{
+    padding-right: 50px;
 }
 
 body {
@@ -15,6 +14,8 @@ body {
 .main {
     display: flex;
 }
+
+
 
 .h-60 {
     height: var(--header-panel-height);
@@ -69,6 +70,18 @@ body {
     font-size: 22px;
 }
 
+div.main.content-box-secondary{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #303646;
+    font-size: 24px;
+
+}
+h1.header-block{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #303646;
+    font-size: 30px;
+
+}
 
 a {
     text-decoration: none;
@@ -133,15 +146,37 @@ a:hover {
     padding-right: 20px;
 }
 
-.book-container {
-    background-image: url(hero.jpg);
+.hero-image{
+    background-image: url(hero2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height : 500px;
+}
 
+.hero-text{
+    color: #f2f2f2;
+    text-align: center;
 
 }
+
+.hero-text h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+.hero-text h2{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 500;
+}
+.hero-btn{
+    color: #f2f2f2;
+    text-align: right;
+}
+
+
+
 .bold{
     font-weight: bold;
 }
@@ -183,8 +218,9 @@ a:hover {
     padding-bottom: 20px;
     padding-left: 100px;
     padding-right: 40px;
-    width: 1000px;
+    width: 1500px;
 }
+
 
 
 .p-40 {
@@ -265,3 +301,16 @@ a:hover {
     padding: 10px;
 
 }
+.element.style {
+    max-width: 300px;
+    max-height: 300px;
+}
+@media only screen and (max-width: 600px) {
+    body{
+        grid-template-columns: 100%;
+        visibility: hidden;
+    }
+}
+
+
+
