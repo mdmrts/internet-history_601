@@ -1,3 +1,3 @@
-# History of the Internet IS 601 Web Systems Development  
+# project_2
 
-[My website](http://midterm.eastus.azurecontainer.io)
+[project_2](http://merveproject2.eastus.azurecontainer.io/article_index.html)
