@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fundamentals of OOP</title>
+    <meta name="description" content="article_4">
+    <style>
+        #wrapper {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:lavender;
+
+        }
+
+        #primary_links {
+            float: right;
+            font-family: Arial;
+            font-size: 19px;
+            line-height: 90px;
+            padding-right: 20px;
+        }
+        h1 {
+            margin-top: 0px;
+            float: left;
+            line-height: 80px;
+        }
+        .banner{
+            padding-top: 20px;
+            margin-top: 0px;
+            margin-bottom: 8px;
+            height: 80px;
+            background-color:lavender;
+        }
+
+        #clear_banner{
+            height: 100px;
+            background-color: lavender;
+        }
+        .article{
+            height: 2200px;
+            width: 892px;
+            margin: 20px;
+            border: cornflowerblue solid 2px;
+            padding: 10px;
+            float: none;
+        }
+        .headline_text{
+            width: 870px;
+            font-family: Arial;
+            padding: 10px 0px 20px 10px;
+            margin-bottom: 0px;
+            line-height: 40px;
+            object-fit: cover;
+        }
+        .article_content{
+            margin: 0px;
+            text-align: justify;
+            font-size:20px;
+            width: 870px;
+            padding-left: 10px;
+        }
+        #footer{
+            margin-top: 40px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .code_text{
+            font-size: 16px;
+            color: white;
+            background-color: #2e2928;
+            font-family: Courier;
+            padding-left: 10px;
+            line-height: 30px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .subheadline{
+            float: none;
+            line-height: 40px;
+            margin-bottom: 0px;
+            font-family: Helvetica;
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+
+
+    <menu class="banner" id="primary_links">
+        <a href="article_index.html">PROJECT_2</a>
+        <a href="article_1.html">OOP GLOSSARY</a>
+        <a href="article_2.html">AAA TESTING</a>
+        <a href="article_3.html">OOP PRINCIPLES</a>
+        <a href="article_4.html">SOLID</a>
+    </menu>
+    <div id="clear_banner"></div>
+    <div class="article">
+
+        <h1 class="headline_text">SOLID Principles</h1>
+        <div class="article_content">
+            <p><b>What are SOLID principles?</b>
+                <p>SOLID principles are a set of 5 Object-Oriented Programming design principles that were advocated for by Uncle Bob (Robert Fowler) by the year 2000. SOLID is an acronym that stands for:
+               <li>	Single Responsibility Principle (S)
+               <li>	Open Closed Principle (O)
+               <li>	Liskov Substitution Principle (L)
+               <li>Interface Segregation Principle (I)
+               <li>Dependency Inversion Principle (D)
+            </p>
+
+<hr>
+            <h1 class="subheadline">Single Responsibility Principle(SRP)</h1>
+            <p>The single-responsibility principle (SRP) states that each class, module, or function in your program should only do one job. In other words, each should have full responsibility for a single functionality of the program. The class should contain only variables and methods relevant to its functionality.
+
+                Classes can work together to complete larger complex tasks, but each class must complete a function from start to finish before it passes the output to another class.</p>
+
+
+               <p class="code_text">
+                Class Addition(Calculation):<br>
+                def get_result(self):<br>
+                return self.value_a+self.value_b<br><br>
+
+                Class Subtraction(Calculation):<br>
+                def get_result(self):<br>
+                return self.value_a-self.value_b<br>
+            </p>
+
+            <p class="code_text">
+            <p class="code_text">
+            <p class="code_text">
+            </p>
+
+            <p>As refactored above, we have two  classes, each with one  responsibility. If a class has only one responsibility, they tend to be more reusable, simpler, and propagate fewer changes to the system. </p>
+            <hr>
+            <h1 class="subheadline">Open-Closed Principle(OCP)</h1>
+            <p>The open-closed principle (OCP) calls for entities that can be widely adapted but also remain unchanged. This leads us to create duplicate entities with specialized behavior through polymorphism.
+
+                Through polymorphism, we can extend our parent entity to suit the needs of the child entity while leaving the parent intact.
+
+                Our parent entity will serve as an abstract base class that can be reused with added specializations through inheritance. However, the original entity is locked to allow the program to be both open and closed.
+
+                The advantage of OCP is that it minimizes program risk when you add new uses for an entity. Instead of reworking the base class to fit a work-in-progress feature, you create a derived class separate from the classes currently present throughout the program.</p>
+
+            <hr>
+            <h1 class="subheadline">Liskov Substitution Principle(LSP)</h1>
+            <p>The principle says that any class must be directly replaceable by any of its subclasses without error.
+
+                Simply put, this states that objects of the derived class (or superclass) can be used in place of objects of their super-class (parent class) without breaking. This means that the objects should behave in the same way.
+                For instance, they should have the same value return type, should have the same number of arguments, raise the same exceptions etc.
+
+
+            <p class="code_text">  class Calculator:</p>
+            <p class="code_text">  def calculate(self, a, b):</p>
+            <p class="code_text">   return a * b</p>
+            </p>
+
+            <p class="code_text"> class Divide(Calculator):</p>
+            <p class="code_text">   def calculate(self, a, b):</p>
+            <p class="code_text">   return a / b</p>
+            </p>
+                Notice that in the above two classes, even though the calculate methods take equal no of arguments, the method in the Divide class could possibly throw a divide by zero error which isn’t a possibility in its parent class (Calculator class) hence a violation of SOLID principles.
+            <p></p>
+            <hr>
+            <h1 class="subheadline">Interface Segregation Principle(ISP)</h1>
+            <p>The interface segregation principle (ISP) requires that classes only be able to perform behaviors that are useful to achieve its end functionality. In other words, classes do not include behaviors they do not use.
+
+                This relates to our first SOLID principle in that together these two principles strip a class of all variables, methods, or behaviors that do not directly contribute to their role. Methods must contribute to the end goal in their entirety.
+            </p>
+
+            <hr>
+            <h1 class="subheadline">Dependency Inversion Principle(DIP)</h1>
+            <p>
+
+               <ol> The Dependency Inversion Principle states that:</ol>
+
+            <li>High level module should not depend on low level modules. Both should depend on abstractions</li>
+
+            <li> Abstractions should not depend on details. Details should depend on abstractions.</li>
+
+                If your code follows the Open-Closed Principle and Liskov Substitution Principle, then it will be implicitly aligned to be compliant to the Dependency Inversion Principle also.
+
+            </p>
+            <p>
+                By following the Open-Closed Principle, you create Interfaces that can be used to provide different high-level implementations. By following Liskov Substitution Principle you ensure that you can replace the low-level class objects with high-level class objects without causing any adverse effect on the application. Thus, by following these two principles you ensure that your high-level classes and low-level classes depend on interfaces. Hence you would implicitly follow the Dependency Inversion Principle.
+            </p>
+
+        </div>
+    </div>
+    <footer id="footer">&copy; Merve Yilmaz</footer>
+</div>
+</body>
+</html>

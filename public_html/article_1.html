@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOP Glossary</title>
+    <meta name="description" content="article_1">
+    <style>
+        #wrapper {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: lavender;
+        }
+
+        #primary_links {
+            float: right;
+            font-family: Arial;
+            font-size: 19px;
+            line-height: 90px;
+            padding-right: 10px;
+        }
+        h1 {
+            margin-top: 0px;
+            float: left;
+            line-height: 80px;
+        }
+        .banner{
+            padding-top: 20px;
+            margin-top: 0px;
+            margin-bottom: 8px;
+            height: 80px;
+            background-color: lavender;
+        }
+        #internet_title {
+            float: left;
+            line-height: 80px;
+            font-size: 31px;
+            font-family: Helvetica;
+        }
+        #clear_banner{
+            height: 100px;
+            background-color: lavender;
+
+        }
+        .article{
+            height: 3400px;
+            width: 890px;
+            margin: 20px;
+            border:deepskyblue 2px solid;
+            padding: 10px;
+            float: none;
+        }
+        .headline_text{
+            width: 870px;
+            font-family:Arial;
+            padding: 10px 0px 20px 10px;
+            margin-bottom: 0px;
+            line-height: 40px;
+            object-fit: cover;
+        }
+        .article_content{
+            margin: 0 px;
+            text-align: justify;
+            font-size: 20px;
+            width: 870px;
+            padding-left: 10px;
+        }
+        #footer{
+            margin-top: 40px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .code_text{
+            font-size: 16px;
+            color: white;
+            background-color: #2e2928;
+            font-family: Courier;
+            padding-left: 10px;
+            line-height: 30px;
+            padding: 0;
+            margin: 0;
+        }
+        p.code_text{
+            width: auto;
+        }
+        .article_img{
+            width: 100%;
+        }
+        .glossary_word{
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+
+    <h1 class="banner" id="internet_title">  </h1>
+    <menu class="banner" id="primary_links">
+        <a href="article_index.html">PROJECT_2</a>
+        <a href="article_1.html">OOP GLOSSARY</a>
+        <a href="article_2.html">AAA TESTING</a>
+        <a href="article_3.html">OOP PRINCIPLES</a>
+        <a href="article_4.html">SOLID</a>
+    </menu>
+    <div id="clear_banner"></div>
+    <div class="article">
+        <h1 class="headline_text">Pylint</h1>
+        <div class="article_content">
+            <p>Pylint is a tool that checks for errors in Python code, tries to enforce a coding standard and looks for code smells. It can also look for certain type errors, it can recommend suggestions about how particular blocks can be refactored and can offer you details about the code's complexity.</p>
+            <hr>
+            <p> Pylint should be easily installable using pip.
+                To begin the implementation, pylint first needs to be installed to the system, you can run the following
+                command in terminal:
+            </p>
+            <p class="code_text">pip install pylint</p>
+            <hr>
+            <p>The command to use pylint on a python file is:</p>
+            <p class="code_text">pylint filename.py</p>
+            <p>It returns output consisting of semantic errors, syntax errors, errors in coding style, bugs in the code, excessive and redundant code, etc. It also assigns a score that indicates whether the python code is an ideal one to use and maintains a history of scores obtained while running over a python file as well as after each edit.</p>
+        </div>
+        <hr>
+        <h1 class="headline_text">The OOP Glossary</h1>
+        <div class="article_content">
+            <p>Object-Oriented Programming (OOP) is an approach to designing and building applications that are flexible, natural, well-crafted, and testable by focusing on objects that interact cleanly with one another.This section contains important terms of object oriented programming. </p>
+            <hr>
+            <p class="glossary_word">Factory</p>
+            <p>Factory method is a creational design pattern which solves the problem of creating product objects without specifying their concrete classes. Factory Method defines a method, which should be used for creating objects instead of direct constructor call ( new operator).</p>
+            <hr>
+            <p class="glossary_word">Instantiation</p>
+            <p>Instantiating a class is creating a copy of the class which inherits all class variables and methods. Instantiating a class in Python is simple. To instantiate a class, we simply call the class as if it were a function, passing the arguments that the __init__ method defines. The return value will be the newly created object.</p>
+            <hr>
+            <p class="glossary_word">Object</p>
+            <p>Collection of various data and methods to operate on the data</p>
+            <hr>
+            <p class="glossary_word">Class</p>
+            <p>The code describing a particular entity in the application, such as Customer, Order, or Address. The class contains the code defining the properties and methods.</p>
+            <hr>
+            <p class="glossary_word">Namespace</p>
+            <p>A namespace is a collection of currently defined symbolic names along with information about the object that each name references. You can think of a namespace as a dictionary in which the keys are the object names and the values are the objects themselves. Each key-value pair maps a name to its corresponding object.</p>
+            <hr>
+            <p class="glossary_word">Constructor</p>
+            <p> Code that is executed each time an instance of the class is created.</p>
+            <hr>
+            <p class="glossary_word">Fixture</p>
+            <p>pytest fixtures are functions attached to the tests which run before the test function is executed. Fixtures are a set of resources that have to be set up before and cleaned up once the Selenium test automation execution is completed.</p>
+            <hr>
+            <p class="glossary_word">Type Hint</p>
+            <p>type hints are the Python native way to define the type of the objects in a program. Traditionally, the Python interpreter handles types in a flexible but implicit way. Recent versions of Python allow you to specify explicit type hints that different tools can use to help you develop your code more efficiently. </p>
+            <hr>
+            <p class="glossary_word">Type Cast</p>
+            <p>Type Casting is the method to convert the variable data type into a certain data type in order to the operation required to be performed by users.
+                Mainly in type casting can be done with these data type function:
+            <li>
+                Int() function take float or string as an argument and return int type object.
+            </li>
+            <li>
+                float() function take int or string as an argument and return float type object.
+            </li>
+            <li>
+                str() function take float or int as an argument and return string type object.
+            </li>
+            </p>
+            <hr>
+            <p class="glossary_word">Unit Test</p>
+            <p>Unit testing involves testing individual components of the software program or application. The main purpose behind this is to check that all the individual parts are working as intended. A unit is known as the smallest possible component of software that can be tested. Generally, it has a few inputs and a single output.</p>
+            <hr>
+            <p class="glossary_word">Static</p>
+            <p> A static method does not receive an implicit first argument. A static method is also a method that is bound to the class and not the object of the class.</p>
+            <hr>
+            <p class="glossary_word">Class Method</p>
+            <p>The @classmethod decorator is a built-in function decorator that is an expression that gets evaluated after your function is defined. The result of that evaluation shadows your function definition.
+                A class method receives the class as an implicit first argument, just like an instance method receives the instance
+            </p>
+            <hr>
+            <p class="glossary_word">Facade</p>
+            <p>facade is a structural design pattern that provides a simplified (but limited) interface to a complex system of classes, library or framework. While Facade decreases the overall complexity of the application, it also helps to move unwanted dependencies to one place</p>
+            <hr>
+            <p class="glossary_word">Design Patterns</p>
+            <p>The design pattern is a technique which used by the developer to solve the commonly occurring software design. In simple word, it is a predefine pattern to solve a recurring problem in the code. These patterns are mainly designed based on requirements analysis.
+                The design pattern is a part of the software development. It is a general repeatable solution for the potential problem in software development. We can follow the patterns details and apply a solution which suits our code.
+            </p>
+            <hr>
+            <p class="glossary_word">Method</p>
+            <p>A special kind of function that is defined in a class definition</p>
+            <hr>
+            <p class="glossary_word">Property</p>
+            <p> Property is the code defining the data managed by the class, such as customername, ordernumber, or emailaddress.</p>
+        </div>
+    </div>
+    <footer id="footer">&copy; Merve Yilmaz</footer>
+</div>
+</body>
+</html>

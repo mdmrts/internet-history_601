@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOP Glossary</title>
+    <meta name="description" content="article_3">
+    <style>
+        #wrapper {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: lavender;
+        }
+
+        #primary_links {
+            float: right;
+            font-family: Arial;
+            font-size: 19px;
+            line-height: 90px;
+            padding-right: 10px;
+        }
+        h1 {
+            margin-top: 0px;
+            float: left;
+            line-height: 80px;
+        }
+        .banner{
+            padding-top: 20px;
+            margin-top: 0px;
+            margin-bottom: 8px;
+            height: 80px;
+            background-color: lavender;
+        }
+        #internet_title {
+            float: left;
+            line-height: 80px;
+            font-size: 31px;
+            font-family: Helvetica;
+        }
+        #clear_banner{
+            height: 100px;
+            background-color: lavender;
+
+        }
+        .article{
+            height: 4650px;
+            width: 890px;
+            margin: 20px;
+            border:deepskyblue 2px solid;
+            padding: 10px;
+            float: none;
+        }
+        .headline_text{
+            width: 870px;
+            font-family:Arial;
+            padding: 10px 0px 20px 10px;
+            margin-bottom: 0px;
+            line-height: 40px;
+            object-fit: cover;
+        }
+        .article_content{
+            margin: 0 px;
+            text-align: justify;
+            font-size: 20px;
+            width: 870px;
+            padding-left: 10px;
+        }
+        #footer{
+            margin-top: 40px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .code_text{
+            font-size: 16px;
+            color: white;
+            background-color: #2e2928;
+            font-family: Courier;
+            padding-left: 10px;
+            line-height: 30px;
+            padding: 0;
+            margin: 0;
+        }
+        p.code_text{
+            width: auto;
+        }
+
+        .glossary_word{
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+
+    <h1 class="banner" id="internet_title">  </h1>
+    <menu class="banner" id="primary_links">
+        <a href="article_index.html">PROJECT_2</a>
+        <a href="article_1.html">OOP GLOSSARY</a>
+        <a href="article_2.html">AAA TESTING</a>
+        <a href="article_3.html">OOP PRINCIPLES</a>
+        <a href="article_4.html">SOLID</a>
+    </menu>
+    <div id="clear_banner"></div>
+    <div class="article">
+        <h1 class="headline_text">What Is Object-Oriented Programming?</h1>
+        <div class="article_content">
+
+
+           <p> Object-Oriented Programming(OOP), is all about creating “objects”. An object is a group of interrelated variables and functions. These variables are often referred to as properties of the object and functions are referred to as the behavior of the objects. These objects provide a better and clear structure for the program.
+           </p>
+            <p>
+            For example, a car can be an object. If we consider the car as an object then its properties would be – its color, its model, its price, its brand, etc. And its behavior/function would be acceleration, slowing down, gear change.
+            </p>
+            <p>
+            Another example- If we consider a dog as an object then its properties would be- his color, his breed, his name, his weight, etc. And his behavior/function would be walking, barking, playing, etc.
+            </p>
+            <p>
+            Object-Oriented programming is famous because it implements the real-world entities like objects, hiding, inheritance, etc in programming. It makes visualization easier because it is close to real-world scenarios.
+            </p>
+
+
+            Main Concepts of Object-Oriented Programming (OOPs)
+            <ol>
+            <li>Polymorphism</li>
+            <li>Encapsulation</li>
+            <li>Inheritance</li>
+            <li>Abstraction</li>
+            </ol>
+
+            <hr>
+            <p>
+
+            <h2 class="headline_text">Python Inheritance</h2>
+                Inheritance enables us to define a class that takes all the functionality from a parent class and allows us to add more. Inheritance is a powerful feature in object oriented programming. It refers to defining a new class with little or no modification to an existing class. The new class is called derived (or child) class and the one from which it inherits is called the base (or parent) class.
+
+               <ul>The benefits of inheritance are:
+               <li>It represents real-world relationships well.</li>
+                   <li>It provides the reusability of a code. We don’t have to write the same code again and again. Also, it allows us to add more features to a class without modifying it.</li>
+                   <li>It is transitive in nature, which means that if class B inherits from another class A, then all the subclasses of B would automatically inherit from class A.</li>
+               </ul>
+            <hr>
+
+            <p class="glossary_word">Example: Inheritance in Python<br>
+        <p class="code_text"> """This is our calculation base class / Abstract Class"""<br>
+        <p class="code_text"> class Calculation:<br>
+        <p class="code_text"> """Base Class used for other calculations"""<br>
+        <p class="code_text"># pylint: disable=too-few-public-methods<br>
+        <p class="code_text">def __init__(self, value_a, value_b):<br>
+        <p class="code_text">"""Constructor, self references the instantiated object of the class"""<br>
+        <p class="code_text"> self.value_a = value_a<br>
+        <p class="code_text">self.value_b = value_b<br>
+        <p class="code_text"> @classmethod<br>
+        <p class="code_text">def create(cls, value_a, value_b):<br>
+        <p class="code_text">   """Class Factory Method, creates the objects"""<br>
+        <p class="code_text">  return cls(value_a, value_b)<br><br></p>
+
+            <p class="code_text"> """This is the addition calculation. Values A and B come from the Calculation class"""</p>
+            <p class="code_text">  from calc.calculation import Calculation</p>
+            <p class="code_text"> class Addition(Calculation):</p>
+            <p class="code_text">"""The Addition class has one method, to get the result of the calculation.</p>
+            <p class="code_text"> A and B come from the Calculation parent Class"""</p>
+            <p class="code_text">def get_result(self):</p>
+            <p class="code_text"> """Gets the result of the addition object"""</p>
+            <p class="code_text"> return self.value_a + self.value_b</p>
+            <p> In the above article, we have created two classes i.e. Calculation (parent class) and Addition (Child Class). The Addition class inherits from the Calculation class. We can use the methods of the calculation class through addition class as seen in the display function in the above code. A child class can also modify the behavior of the parent class as seen through the details() method.</p>
+            <hr>
+
+
+            <h2 class="headline_text"> Python Polymorphism</h2>
+            The word polymorphism means having many forms. In programming, polymorphism means the same function name (but different signatures) being used for different types.
+
+            <ul>Polymorphism with Inheritance:
+                <li>Polymorphism in python defines methods in the child class that have the same name as the methods in the parent class. In inheritance, the child class inherits the methods from the parent class. Also, it is possible to modify a method in a child class that it has inherited from the parent class.</li>
+                <li>This is mostly used in cases where the method inherited from the parent class doesn’t fit the child class. This process of re-implementing a method in the child class is known as Method Overriding. Here is an example that shows polymorphism with inheritance:</li>
+
+            </ul>
+            <hr>
+            <p class="glossary_word">Example: Polymorphism in Python</p>
+            <p class="code_text"> """This is the addition calculation. Values A and B come from the Calculation class"""</p>
+            <p class="code_text">  from calc.calculation import Calculation</p>
+            <p class="code_text"> class Addition(Calculation):</p>
+            <p class="code_text">"""The Addition class has one method, to get the result of the calculation.A and B come from the Calculation parent Class"""</p>
+            <p class="code_text">def get_result(self):</p>
+            <p class="code_text"> """Gets the result of the addition object"""</p>
+            <p class="code_text"> return self.value_a + self.value_b</p></p>
+
+
+            <p class="code_text"> """This is the addition calculation. Values A and B come from the Calculation class"""</p>
+            <p class="code_text">  from calc.calculation import Calculation</p>
+            <p class="code_text"> class Subtraction(Calculation):</p>
+            <p class="code_text">"""The Subtraction class has one method, to get the result of the calculation.
+                A and B come from the Calculation parent Class"""</p>
+            <p class="code_text">   def get_result(self):</p>
+            <p class="code_text"> """Gets the result of the subtraction object."""</p>
+            <p class="code_text">   return self.value_a - self.value_b</p>
+
+
+            <p> In the above article there is an example that shows polymorphism with inheritance.
+                Polymorphism in python defines methods in the child class that have the same name as the methods in the parent class.
+                In inheritance, the child class inherits the methods from the parent class.
+                Also, it is possible to modify a method in a child class that it has inherited from the parent class.
+                This is mostly used in cases where the method inherited from the parent class doesn’t fit the child class.
+                This process of re-implementing a method in the child class is known as Method Overriding.</p>
+            <hr>
+
+
+
+            <h2 class="headline_text"> Python Encapsulation</h2>
+            Encapsulation is a way to ensure security. Basically, it hides the data from the access of outsiders. Such as if an organization wants to protect an object/information from unwanted access by clients or any unauthorized person then encapsulation is the way to ensure this.
+
+            <ul>
+                <li>You can declare the methods or the attributes protected by using a single underscore ( _ ) before their names. Such as- self._name or def _method( ); Both of these lines tell that the attribute and method are protected and should not be used outside the access of the class and sub-classes but can be accessed by class methods and objects.</li>
+                <li>Though Python uses ‘ _ ‘ just as a coding convention, it tells that you should use these attributes/methods within the scope of the class. But you can still access the variables and methods which are defined as protected, as usual.</li>
+                <li>Now for actually preventing the access of attributes/methods from outside the scope of a class, you can use “private members“. In order to declare the attributes/method as private members, use double underscore ( __ ) in the prefix. Such as – self.__name or def __method(); Both of these lines tell that the attribute and method are private and access is not possible from outside the class.</li>
+            </ul>
+            <hr>
+
+            <p class="glossary_word">Example: Encapsulation in Python</p>
+            <p class="code_text"> """This is our calculation base class / Abstract Class"""</p>
+            <p class="code_text"> class Calculation:</p>
+            <p class="code_text"> """Base Class used for other calculations"""</p>
+            <p class="code_text"># pylint: disable=too-few-public-methods</p>
+            <p class="code_text">def __init__(self, value_a, value_b):</p>
+            <p class="code_text">"""Constructor, self references the instantiated object of the class"""</p>
+            <p class="code_text"> self.value_a = value_a</p>
+            <p class="code_text">self.value_b = value_b</p>
+            <p class="code_text"> @classmethod</p>
+            <p class="code_text">def create(cls, value_a, value_b):</p>
+            <p class="code_text">   """Class Factory Method, creates the objects"""</p>
+            <p class="code_text">  return cls(value_a, value_b)</p></p>
+
+            <p> In the above article, xxxxxxxxxxx</p>
+
+            <hr>
+            <h2 class="headline_text"> Python Abstraction</h2>
+            <p> In object-oriented programming, an abstract class is a class that cannot be instantiated. However, you can create classes that inherit from an abstract class.</p>
+            <p>Typically, you use an abstract class to create a blueprint for other classes. Similarly, an abstract method is an method without an implementation. An abstract class may or may not include abstract methods.</p>
+            <li>Python doesn’t directly support abstract classes. But it does offer a module that allows you to define abstract classes.</li>
+            <li>To define an abstract class, you use the abc (abstract base class) module.The abc module provides you with the infrastructure for defining abstract base classes.</li>
+
+
+            <hr>
+
+            <p class="glossary_word">Example: Abstraction in Python</p>
+            <p class="code_text"> """This is the addition calculation. Values A and B come from the Calculation class"""</p>
+            <p class="code_text">  from calc.calculation import Calculation</p>
+            <p class="code_text"> class Subtraction(Calculation):</p>
+            <p class="code_text">"""The Subtraction class has one method, to get the result of the calculation.
+                A and B come from the Calculation parent Class"""</p>
+            <p class="code_text">   def get_result(self):</p>
+            <p class="code_text"> """Gets the result of the subtraction object."""</p>
+            <p class="code_text">   return self.value_a - self.value_b</p>
+
+
+            <p> In the above code, we have imported the abc module(calculation) to create the abstract base class. We created the Subraction class that inherited the calculation class and defined an abstract method named get_result(). </p>
+
+
+
+    </div>
+    <footer id="footer">&copy; Merve Yilmaz</footer>
+</div>
+</body>
+</html>

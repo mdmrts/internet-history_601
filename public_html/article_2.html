@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOP Glossary</title>
+    <meta name="description" content="article_2">
+    <style>
+        #wrapper {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: lavender;
+        }
+
+        #primary_links {
+            float: right;
+            font-family: Arial;
+            font-size: 19px;
+            line-height: 90px;
+            padding-right: 10px;
+        }
+        h1 {
+            margin-top: 0px;
+            float: left;
+            line-height: 80px;
+        }
+        .banner{
+            padding-top: 20px;
+            margin-top: 0px;
+            margin-bottom: 8px;
+            height: 80px;
+            background-color: lavender;
+        }
+        #internet_title {
+            float: left;
+            line-height: 80px;
+            font-size: 31px;
+            font-family: Helvetica;
+        }
+        #clear_banner{
+            height: 100px;
+            background-color: lavender;
+
+        }
+        .article{
+            height: 2400px;
+            width: 890px;
+            margin: 20px;
+            border:deepskyblue 2px solid;
+            padding: 10px;
+            float: none;
+        }
+        .headline_text{
+            width: 870px;
+            font-family:Arial;
+            padding: 10px 0px 20px 10px;
+            margin-bottom: 0px;
+            line-height: 40px;
+            object-fit: cover;
+        }
+        .article_content{
+            margin: 0 px;
+            text-align: justify;
+            font-size: 20px;
+            width: 870px;
+            padding-left: 10px;
+        }
+        #footer{
+            margin-top: 40px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .code_text{
+            font-size: 16px;
+            color: white;
+            background-color: #2e2928;
+            font-family: Courier;
+            padding-left: 10px;
+            line-height: 30px;
+            padding: 0;
+            margin: 0;
+        }
+        p.code_text{
+            width: auto;
+        }
+        .article_img{
+            width: 100%;
+        }
+        .glossary_word{
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+
+    <h1 class="banner" id="internet_title">  </h1>
+    <menu class="banner" id="primary_links">
+        <a href="article_index.html">PROJECT_2</a>
+        <a href="article_1.html">OOP GLOSSARY</a>
+        <a href="article_2.html">AAA TESTING</a>
+        <a href="article_3.html">OOP PRINCIPLES</a>
+        <a href="article_4.html">SOLID</a>
+    </menu>
+    <div id="clear_banner"></div>
+    <div class="article">
+        <h1 class="headline_text">Arrange-Act-Assert</h1>
+        <div class="article_content">
+            <p>A test is a procedure that exercises a behavior to determine if the behavior functions correctly. There are several different kinds of tests, like unit tests, integration tests, or end-to-end tests, but all functional tests do the same basic thing: they try something and report PASS or FAIL.
+                Testing provides an empirical feedback loop for development. That’s how testing keeps us safe. With tests, we know when things break. Without tests, coding can be dangerous. If we intend to spend time writing tests, how can we write good tests? There’s a simple but powerful pattern: Arrange-Act-Assert.
+            </p>
+            <hr>
+            <p class="glossary_word">What is Arrange Act Assert?</p>
+            <p>
+                The “Arrange-Act-Assert” (also AAA and 3A) pattern of testing was observed and named by Bill Wake in 2001.
+                Arrange-Act-Assert is a great way to structure test cases. It prescribes an order of operations:
+            <li>Arrange inputs and targets. Arrange steps should set up the test case. Does the test require any objects or special settings? Does it need to prep a database? Does it need to log into a web app? Handle all of these operations at the start of the test.
+            </li>
+            <li>	Act on the target behavior. Act steps should cover the main thing to be tested. This could be calling a function or method, calling a REST API, or interacting with a web page. Keep actions focused on the target behavior.
+            </li>
+            <li>  Assert expected outcomes. Act steps should elicit some sort of response. Assert steps verify the goodness or badness of that response. Sometimes, assertions are as simple as checking numeric or string values. Other times, they may require checking multiple facets of a system. Assertions will ultimately determine if the test passes or fails.
+            </li>
+            </p>
+            <hr>
+            <p>Behavior-Driven Development follows the Arrange-Act-Assert pattern by another name: Given-When-Then. The Gherkin language uses Given-When-Then steps to specify behaviors in scenarios. Given-When-Then is essentially the same formula as Arrange-Act-Assert.</p>
+            <p> Every major programming language has at least one test framework. Frameworks like JUnit, NUnit, Cucumber, and pytest enable you, as the programmer, to automate tests, execute suites, and report results. However, the framework itself doesn’t make a test case “good” or “bad.” You, as the tester, must know how to write good tests!</p>
+               <p> The pattern focuses each test on a single action. The advantage of this focus is that it clearly separates the arrangement of the System Under Test (SUT) and the assertions that are made on it after the action.</p>
+            <hr>
+            <p>
+                Follow this pattern across your tests and your suite will be much improved.
+            </p>
+
+
+        </div>
+        <hr>
+
+        <div class="article_content">
+
+            <p class="glossary_word">Definition</p>
+            <p> The definition of the test function.</p>
+            <p class="code_text">def test_calculator_add():</p>
+
+            <p>Name your function something descriptive because the function name will be shown when the test fails in Pytest output.</p>
+            <hr>
+
+            <p class="glossary_word">Docstring</p>
+            <p>An optional short single line statement about the behavior under test.</p>
+            <p class="code_text">"""Testing the Add function of the calculator"""</p>
+            <hr>
+
+            <p class="glossary_word">Arrange</p>
+            <p>The block of code that sets up the conditions for the test action.</p>
+            <p class="code_text">calc=Calculator()</p>
+            <hr>
+
+            <p class="glossary_word">Act</p>
+            <p>The line of code where the Action is taken on the SUT.</p>
+            <p class="code_text">calc.add_number(4)</p>
+            <hr>
+
+
+            <p class="glossary_word">Assert</p>
+            <p>The block of code that performs the assertions on the state of the SUT after the action.</p>
+            <p class="code_text">assert calc.result == 4</p>
+            <hr>
+
+            <p class="glossary_word">The final test</p>
+            <p>There’s the example test in full:</p>
+            <p class="code_text">def test_calculator_add():</p>
+            <p class="code_text"> """Testing the Add function of the calculator"""</p>
+            <p class="code_text"> #Arrange by instantiating the calculator class</p>
+            <p class="code_text"> calc = Calculator()</p>
+            <p class="code_text"> #Act by calling the method to be tested</p>
+            <p class="code_text">calc.add_number(4)</p>
+            <p class="code_text"> #Assert that the results are correct</p>
+            <p class="code_text"> assert calc.result == 4</p></p>
+            <hr>
+
+            <p>Arrange-Act-Assert is powerful because it is simple. It forces tests to focus on independent, individual behaviors. It separates setup actions from the main actions. It requires test to make verifications and not merely run through motions. Notice how the pattern is not Arrange-Act-Assert-Act-Assert – subsequent actions and assertions belong in separate tests! Arrange-Act-Assert is a great pattern to follow for writing good functional tests.</p>
+
+
+        </div>
+    </div>
+    <footer id="footer">&copy; Merve Yilmaz</footer>
+</div>
+</body>
+</html>
