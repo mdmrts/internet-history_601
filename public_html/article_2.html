@@ -43,7 +43,7 @@
 
         }
         .article{
-            height: 2400px;
+            height: 3300px;
             width: 890px;
             margin: 20px;
             border:deepskyblue 2px solid;
@@ -179,6 +179,40 @@
             <hr>
 
             <p>Arrange-Act-Assert is powerful because it is simple. It forces tests to focus on independent, individual behaviors. It separates setup actions from the main actions. It requires test to make verifications and not merely run through motions. Notice how the pattern is not Arrange-Act-Assert-Act-Assert – subsequent actions and assertions belong in separate tests! Arrange-Act-Assert is a great pattern to follow for writing good functional tests.</p>
+            <hr>
+
+
+            <p class="glossary_word">Unit Test-Use External CSV Test Data</p>
+            <p>For external testing we need to install pandas library and we can read in a csv file filled with test case values.</p>
+               <p> First set up our csv files and then we can see that  addition method being tested with this method below.
+            </p>
+            <p class="code_text">
+                Value 1,Value 2,Result<br>
+                580,459,1039<br>
+                799,187,986<br>
+                986,921,1907<br>
+                49,359,408<br>
+                508,114,622<br>
+                209,585,794<br>
+                711,828,1539<br>
+                865,736,1601<br>
+                769,226,995
+            </p>
+
+            <hr>
+
+            <p class="code_text">
+                def test_addition():<br>
+                """method calling Addition operation"""<br>
+                dataframe = pd.read_csv(data_path)<br>
+                for index, row in dataframe.iterrows():<br>
+                # Arrange & Act<br>
+                addition = Addition.create((row['value a'], row['value b']))<br>
+                result = addition.get_result()<br>
+                # Assert<br>
+                assert result == float(row['answer'])
+            </p>
+            <hr>
 
 
         </div>
